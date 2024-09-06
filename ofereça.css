@@ -1,0 +1,134 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5A7D8C;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header .logo img {
+    height: 50px; /* Ajuste a altura da logo conforme necessário */
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+header .social-icon {
+    display: flex;
+    gap: 15px; /* Espaçamento entre ícones */
+}
+
+header .social-icon svg {
+    fill: #fff;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.offer-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.offer-form h1 {
+    color: #5A7D8C;
+    margin-bottom: 10px;
+}
+
+.offer-form p {
+    margin-bottom: 20px;
+}
+
+.offer-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.offer-form input[type="text"],
+.offer-form input[type="email"],
+.offer-form input[type="tel"],
+.offer-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.offer-form button {
+    background-color: #5A7D8C;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.offer-form button:hover {
+    background-color: #4a6e6c;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info h2 {
+    color: #5A7D8C;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #5A7D8C;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    height: 50px; /* Ajuste a altura do rodapé conforme necessário */
+}
+
+.back-to-home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.back-to-home .btn-back {
+    background-color: #002c79;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-to-home .btn-back:hover {
+    background-color: #00214d;
+}
