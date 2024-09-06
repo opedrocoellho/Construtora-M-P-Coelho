@@ -48,7 +48,7 @@ header {
 }
 
 .social-icons svg {
-    fill: #555; /* Cor do ícone */
+    fill: #555; /* Cor do Ã­cone */
     margin-left: 30px;
 }
 
@@ -91,6 +91,7 @@ header {
     text-align: center;
 }
 
+
 /* Carousel Styles */
 .carousel {
     position: relative;
@@ -113,10 +114,16 @@ header {
     padding: 20px;
 }
 
+.carousel-item img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
 .carousel-item img {
     width: 100%;
     height: auto;
     display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .carousel-button {
@@ -137,4 +144,208 @@ header {
 
 .next {
     right: 0;
+}
+
+.family-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #B2D4E7, #5A7D8C); 
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-radius: 10px; 
+}
+
+.family-home-content {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.family-home-image {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-right: 40px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.family-home-image:hover {
+    transform: rotate(4deg); 
+}
+
+.family-home-text {
+    flex: 1;
+    text-align: left;
+}
+
+.family-home-text h2 {
+    color: #ffffff; 
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.family-home-text p {
+    font-size: 1.2rem;
+    color: #f0f0f0; 
+}
+
+.home-dream-form {
+    background: linear-gradient(135deg, #5A7D8C, #B2D4E7); /* DegradÃª suave */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.home-dream-form h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.dream-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.contact-btn {
+    background-color: #fff;
+    color: #5A7D8C;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #5A7D8C;
+    color: #fff;
+}
+
+.home-tips {
+    background: linear-gradient(135deg, #f0f4f8, #d9e4ec); /* DegradÃª suave em tons claros */
+    padding: 50px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.home-tips h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.tip-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tip-item h3 {
+    font-size: 1.2rem;
+    color: #5A7D8C;
+    margin-bottom: 10px;
+}
+
+.tip-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.more-tips-btn {
+    display: inline-block;
+    background-color: #5A7D8C;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.more-tips-btn:hover {
+    background-color: #3e5863;
+}
+
+.sobre-nos {
+    background-color: #f5f5f5; /* Fundo cinza claro */
+    padding: 60px 20px;
+    color: #333;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.sobre-nos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-nos h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Cor escura para o tÃ­tulo */
+}
+
+.sobre-nos p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555; /* Cor mais suave para o texto */
+}
+
+.sobre-nos .btn-consultor {
+    background-color: #007BFF; /* Azul vibrante para o botÃ£o */
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sobre-nos .btn-consultor:hover {
+    background-color: #0056b3; /* Efeito "hover" mais escuro */
 }
